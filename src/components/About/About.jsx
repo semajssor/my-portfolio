@@ -6,7 +6,7 @@ function About() {
 	return (
 		<section className="about-section" id="about">
 			<motion.img
-				src="/src/assets/avatar-circle.png"
+				src="/assets/avatar-circle.png"
 				alt="Avatar"
 				className="avatar"
 				{...fadeInUp(0)}
