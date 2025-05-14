@@ -13,7 +13,15 @@ function About() {
 			/>
 
 			<motion.div className="about-text" {...fadeInUp(0.2)}>
-				<motion.h2 {...fadeInUp(0.3)}>Hello! I'm James 👋</motion.h2>
+				<motion.h2 {...fadeInUp(0.3)}>
+					Hello! I'm James{" "}
+					<motion.span
+						animate={{ rotate: [0, 20, -10, 20, -5, 0] }}
+						transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 1 }}
+						style={{ display: "inline-block", originX: 0.7, originY: 0.7 }}>
+						👋
+					</motion.span>
+				</motion.h2>
 
 				<motion.p {...fadeInUp(0.4)}>
 					Aspiring Full-Stack Developer with a passion for turning ideas into functional,
@@ -28,10 +36,10 @@ function About() {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="btn">
-						📄  Download Resume
+						📄 Download Resume
 					</a>
 					<a href="mailto:jamesrossmail@duck.com" className="btn">
-						💼  Hire Me
+						💼 Hire Me
 					</a>
 				</motion.div>
 			</motion.div>
