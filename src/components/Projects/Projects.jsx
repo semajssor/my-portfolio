@@ -29,6 +29,15 @@ const projects = [
 		link: "https://github.com/semajssor/face_recognition_brain",
 	},
 	{
+		title: "Rock Paper Scissors Lizard Spock",
+		description:
+			"A fun and responsive Rock-Paper-Scissors-Lizard-Spock game built with modern JavaScript. Features dynamic gameplay logic, interactive UI, and a clean, mobile-friendly design.",
+		image: "/assets/projects-images/R-P-S-L-S.png",
+		gif: "/assets/projects-videos/R-P-S-L-S.gif",
+		tech: ["html", "css", "javascript"],
+		link: "https://github.com/semajssor/rock-paper-scissors-lizard-spock",
+	},
+	{
 		title: "Robofriends",
 		description:
 			"A modernized version of the classic “Robot Friends” app, now built with React and powered by Vite for faster development and improved performance.",
