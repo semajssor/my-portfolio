@@ -1,0 +1,137 @@
+.projects-section {
+   padding: 4rem 2rem;
+   background-color: var(--bg-color);
+}
+
+#projects h2 {
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   font-weight: 600;
+   color: var(--text-color);
+   text-align: center;
+}
+
+.projects-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.project-card {
+   background-color: var(--card-bg);
+   border-radius: 1rem;
+   box-shadow: var(--box-shadow);
+   padding: 2rem;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   position: relative;
+}
+
+.project-card:hover {
+   transform: translateY(-6px) scale(1.02);
+   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icons {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+   margin: 1rem 0;
+}
+
+.tech-icon svg {
+   width: 28px;
+   height: 28px;
+   opacity: 0.8;
+   transition: transform 0.2s ease;
+}
+
+.tech-icon:hover svg {
+   transform: scale(1.1);
+   opacity: 1;
+}
+
+/* Media wrapper for image and gif */
+.media-wrapper {
+   position: relative;
+   width: 100%;
+   height: 200px;
+   border-radius: 0.75rem;
+   overflow: hidden;
+   margin-bottom: 1rem;
+}
+
+.project-image,
+.project-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 0.75rem;
+   transition: opacity 0.3s ease-in-out;
+}
+
+/* Show image by default */
+.project-image {
+   z-index: 2;
+   opacity: 1;
+}
+
+/* GIF hidden until hover */
+.project-video {
+   z-index: 1;
+   opacity: 0;
+   pointer-events: none;
+}
+
+/* Hover swap */
+.project-card:hover .project-image {
+   opacity: 0;
+}
+
+.project-card:hover .project-video {
+   opacity: 1;
+}
+
+.project-card h3 {
+   margin: 1rem 0 0.5rem;
+   font-size: 1.25rem;
+   color: var(--button-bg);
+}
+
+.project-card p {
+   color: var(--label-color);
+   margin-bottom: 1.5rem;
+   font-size: 0.95rem;
+}
+
+.project-card .btn {
+   display: inline-block;
+   padding: 0.6rem 1.2rem;
+   background-color: var(--button-bg);
+   color: var(--text-color);
+   border-radius: 0.5rem;
+   text-decoration: none;
+   font-weight: 500;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card .btn:hover {
+   color: var(--accent-color);
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+   .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 1024px) {
+   .projects-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }}

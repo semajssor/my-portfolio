@@ -1,0 +1,122 @@
+#contact {
+  color: var(--text-color);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#contact form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#contact label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--label-color);
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: var(--font-main);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  background-color: var(--input-focus);
+  box-shadow: 0 0 0 2px #00b4d8;
+}
+
+#contact textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact button {
+  padding: 0.7rem 1rem;
+  background: var(--button-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+  font-family: var(--font-main);
+}
+
+#contact button:hover {
+  background: var(--button-hover);
+}
+
+#contact label svg {
+  margin-right: 8px;
+  color: #00b4d8;
+  vertical-align: middle;
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: #4ade80;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--success-bg);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.2);
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #f87171;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--error-bg);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact form {
+    padding: 1.5rem;
+  }
+
+  #contact button {
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    }
+}

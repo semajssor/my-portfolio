@@ -1,0 +1,79 @@
+:root {
+  --font-main: 'Space Grotesk', sans-serif;
+  --bg-color: #121212;
+  --text-color: #eee;
+  --card-bg: #2a2a40;    
+  --input-bg: #3a3a5a;
+  --input-focus: #444466;
+  --button-bg: linear-gradient(135deg, #00b4d8, #0077b6);
+  --button-hover: linear-gradient(135deg, #0096c7, #023e8a);
+  --widget-bg: #3a3a5a;
+  --success-bg: #1e3a1e;
+  --error-bg: #3a1e1e;
+  --label-color: #c0c0c0;
+  --box-shadow: 0 8px 24px rgba(255, 255, 255, 0.150),
+    0 4px 12px rgba(255, 255, 255, 0.05);
+  --accent-color: #00b4d8;
+}
+
+html.light {
+  --bg-color: #f0f0f0;
+  --text-color: #111;
+  --card-bg: #ffffff;
+  --input-bg: #f9f9f9;
+  --input-focus: #e0e0e0;
+  --button-bg: linear-gradient(135deg, #0077b6, #00b4d8);
+  --button-hover: linear-gradient(135deg, #023e8a, #0096c7);
+  --widget-bg: #e6f4f1;
+  --success-bg: #d1fae5;
+  --error-bg: #fee2e2;
+  --label-color: #555;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.widget {
+  background-color: var(--widget-bg);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
