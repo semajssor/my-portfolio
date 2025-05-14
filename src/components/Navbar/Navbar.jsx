@@ -1,8 +1,6 @@
 import "./Navbar.css";
 import WeatherWidget from "../Weather Widget/WeatherWidget";
 import ThemeToggle from "../Theme/ThemeToggle";
-import brand_image_white from "../../assets/brand_image_white.svg";
-import brand_image_black from "../../assets/brand_image_black.svg";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import useDarkMode from "../../hooks/useDarkMode";
@@ -11,10 +9,14 @@ function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const isDarkMode = useDarkMode();
 
+	const brandImageSrc = isDarkMode
+		? "/assets/brand_image_white.svg"
+		: "/assets/brand_image_black.svg";
+
 	return (
 		<nav className="navbar">
 			<div className="brandImage">
-				<img src={isDarkMode ? brand_image_white : brand_image_black} alt="James Ross Logo" />
+				<img src={brandImageSrc} alt="James Ross Logo" />
 			</div>
 
 			<ul className={`nav-links ${menuOpen ? "open" : ""}`}>
