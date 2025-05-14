@@ -28,10 +28,10 @@ function About() {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="btn">
-						📄 Download Resume
+						📄  Download Resume
 					</a>
 					<a href="mailto:jamesrossmail@duck.com" className="btn">
-						💼 Hire Me
+						💼  Hire Me
 					</a>
 				</motion.div>
 			</motion.div>
