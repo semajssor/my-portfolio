@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./ThemeToggle.css";
+import { FaSun, FaMoon } from "react-icons/fa";
+
 
 function ThemeToggle() {
 	const [darkMode, setDarkMode] = useState(() => {

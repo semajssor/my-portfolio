@@ -72,9 +72,14 @@
       padding: 1rem 0;
       gap: 1rem;
       display: none;
-      border-radius: 0 0 8px 8px;
+      border-radius: 8px;
    }
 
    .nav-links.open {
       display: flex;
-   }}
+   }
+
+   .nav-links li a:hover {
+      color: var(--accent-color);
+   }
+}
