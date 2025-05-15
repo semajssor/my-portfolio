@@ -2,7 +2,8 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 1rem;
+   width: 100%;
+   height: 100%;
 }
 
 .theme-toggle input[type="checkbox"] {
@@ -11,13 +12,17 @@
 
 .theme-toggle label {
    cursor: pointer;
-   font-size: 1.4rem;
-   transition: transform 0.3s ease;
+   font-size: 1.6rem;
+   transition: transform 0.3s ease, color 0.3s ease;
    color: var(--accent-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .theme-toggle label:hover {
    transform: rotate(15deg) scale(1.1);
+   color: var(--primary-color);
 }
 
 .theme-toggle .icon {

@@ -1,0 +1,26 @@
+.fixed-theme-toggle {
+   position: fixed;
+   top: 80vh;
+   right: 1rem;
+   z-index: 1000;
+
+   width: 48px;
+   height: 48px;
+
+   background: var(--widget-bg);
+   backdrop-filter: blur(6px);
+   -webkit-backdrop-filter: blur(6px);
+   border-radius: 50%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.fixed-theme-toggle:hover {
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+   transform: scale(1.05);
+}

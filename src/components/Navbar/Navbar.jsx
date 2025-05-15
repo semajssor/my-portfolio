@@ -42,8 +42,6 @@ function Navbar() {
 					<WeatherWidget />
 				</div>
 
-				<ThemeToggle />
-
 				<button
 					className="menu-toggle"
 					onClick={() => setMenuOpen(!menuOpen)}
