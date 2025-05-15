@@ -1,5 +1,4 @@
 import "./ContactForm.css";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../animations/fadeInUp";
 import {
@@ -9,47 +8,10 @@ import {
 	FaCheckCircle,
 	FaExclamationTriangle,
 } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-	const [submitted, setSubmitted] = useState(false);
-	const [sending, setSending] = useState(false);
-	const [error, setError] = useState(null);
-
-	const FormspreeApiKey = import.meta.env.VITE_FORMSPREE_API_KEY;
-
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		setSending(true);
-		setError(null);
-
-		const formData = new FormData(e.target);
-		const data = Object.fromEntries(formData.entries());
-
-		try {
-			const response = await fetch(`https://formspree.io/f/${FormspreeApiKey}`, {
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(data),
-			});
-
-			const result = await response.json();
-
-			if (response.ok) {
-				setSubmitted(true);
-				e.target.reset();
-				setTimeout(() => setSubmitted(false), 4000);
-			} else {
-				throw new Error(result.error || "Something went wrong");
-			}
-		} catch (err) {
-			setError(err.message || "Something went wrong. Please try again.");
-		} finally {
-			setSending(false);
-		}
-	};
+	const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_FORM_ID); 
 
 	return (
 		<section id="contact">
@@ -59,23 +21,29 @@ const Contact = () => {
 				<label htmlFor="name">
 					<FaUser /> Your Name
 				</label>
-				<input type="text" id="name" name="name" required />
+				<input id="name" type="text" name="name" required />
+
+				<ValidationError prefix="Name" field="name" errors={state.errors} />
 
 				<label htmlFor="email">
 					<FaEnvelope /> Your Email
 				</label>
-				<input type="email" id="email" name="email" required />
+				<input id="email" type="email" name="email" required />
+
+				<ValidationError prefix="Email" field="email" errors={state.errors} />
 
 				<label htmlFor="message">
 					<FaCommentDots /> Your Message
 				</label>
 				<textarea id="message" name="message" rows="4" required />
 
-				<button type="submit" disabled={sending}>
-					{sending ? "Sending..." : "Send Message"}
+				<ValidationError prefix="Message" field="message" errors={state.errors} />
+
+				<button type="submit" disabled={state.submitting}>
+					{state.submitting ? "Sending..." : "Send Message"}
 				</button>
 
-				{submitted && (
+				{state.succeeded && (
 					<motion.div
 						className="success-message"
 						initial={{ opacity: 0, scale: 0.8 }}
@@ -85,13 +53,13 @@ const Contact = () => {
 					</motion.div>
 				)}
 
-				{error && (
+				{state.errors && state.errors.length > 0 && (
 					<motion.div
 						className="error-message"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.4 }}>
-						<FaExclamationTriangle /> {error}
+						<FaExclamationTriangle /> Please fix the errors above.
 					</motion.div>
 				)}
 			</motion.form>
