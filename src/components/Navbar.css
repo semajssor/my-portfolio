@@ -1,0 +1,40 @@
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #1e1e1e;
+   padding: 1rem 2rem;
+   border-radius: 8px;
+   margin-bottom: 2rem;
+}
+
+.logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #90cdf4;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+}
+
+.nav-links li a {
+   text-decoration: none;
+   color: #eee;
+   font-weight: 500;
+   transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+   color: #90cdf4;
+}
+
+.weather-widget {
+   font-size: 0.9rem;
+   background-color: #2a2a2a;
+   padding: 0.4rem 1rem;
+   border-radius: 20px;
+   color: #ccc;
+}
