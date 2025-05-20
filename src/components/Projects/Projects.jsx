@@ -46,6 +46,15 @@ const projects = [
 		tech: ["react", "vite", "javascript", "css", "html"],
 		link: "https://github.com/semajssor/robofriends_vite",
 	},
+	{
+		title: "Random Password Generator",
+		description:
+			"A simple and effective password generator that creates strong, random passwords based on user-defined criteria. Built with JavaScript, HTML, and CSS.",
+		image: "/assets/projects-images/password_generator.png",
+		gif: "/assets/projects-videos/password_generator.gif",
+		tech: ["html", "css", "javascript"],
+		link: "https://github.com/semajssor/password_generator",
+	},
 	// Add more projects here...
 ];
 
