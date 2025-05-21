@@ -13,7 +13,6 @@
 <img src="https://img.shields.io/github/languages/count/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-language-count">
 <br clear="left" />
 <br clear="left" />
-<br clear="left" />
 <em>Built with the tools and technologies:</em>
 <br clear="left" />
 <br clear="left" />
