@@ -1,13 +1,12 @@
 <div id="top">
 
 <!-- HEADER STYLE: COMPACT -->
-<img src="https://raw.githubusercontent.com/semajssor/my-portfolio/main/src/assets/logo.svg" width="30%">
+<img src="https://raw.githubusercontent.com/semajssor/my-portfolio/main/src/assets/logo.svg" width="20%">
 
 # MY-PORTFOLIO
 <em>Empower your digital presence with personalized flair.</em>
 
 <br clear="left" />
-
 <!-- BADGES -->
 <img src="https://img.shields.io/github/last-commit/semajssor/my-portfolio?style=flat-square&logo=git&logoColor=white&color=E92063" alt="last-commit">
 <img src="https://img.shields.io/github/languages/top/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-top-language">
@@ -15,9 +14,8 @@
 
 <br clear="left" />
 <em>Built with the tools and technologies:</em>
-
+<br clear="left" />
 <!-- Languages & Tools Used -->
-
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
 <img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=react&logoColor=black" alt="React">
 <img src="https://img.shields.io/badge/Vite-646CFF.svg?style=flat-square&logo=vite&logoColor=white" alt="Vite">
@@ -26,7 +24,7 @@
 <img src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat-square&logo=prettier&logoColor=black" alt="Prettier">
 <img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat-square&logo=npm&logoColor=white" alt="npm">
 <img src="https://img.shields.io/badge/Vercel-000000.svg?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
-<img src="https://img.shields.io/badge/Formspree-EF233C.svg?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMSAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMuMC9zdmc... (shortened for display)" alt="Formspree">
+<img src="https://img.shields.io/badge/Formspree-EF233C.svg?style=flat-square" alt="Formspree">
 
 
 <br clear="left"/>
@@ -171,19 +169,19 @@ Build my-portfolio from the source and intsall dependencies:
 1. **Clone the repository:**
 
 ```sh
-❯ git clone https://github.com/semajssor/my-portfolio
+git clone https://github.com/semajssor/my-portfolio
 ```
 
 2. **Navigate to the project directory:**
 
 ```sh
-❯ cd my-portfolio
+cd my-portfolio
 ```
 
 3. **Install the dependencies:**
 
 ```sh
-❯ npm install
+npm install
 ```
 
 ### ⚪ Usage
