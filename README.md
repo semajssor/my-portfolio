@@ -6,7 +6,7 @@
 # MY-PORTFOLIO
 <em>Empower your digital presence with personalized flair.</em>
 
-<br clear="left" />
+
 <!-- BADGES -->
 <img src="https://img.shields.io/github/last-commit/semajssor/my-portfolio?style=flat-square&logo=git&logoColor=white&color=E92063" alt="last-commit">
 <img src="https://img.shields.io/github/languages/top/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-top-language">
@@ -14,6 +14,8 @@
 
 <br clear="left" />
 <em>Built with the tools and technologies:</em>
+<br clear="left" />
+<br clear="left" />
 <br clear="left" />
 <!-- Languages & Tools Used -->
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
@@ -50,25 +52,29 @@
 
 ## 🔴 Overview
 
-**my-portfolio** is a custom-built, modern web developer portfolio that showcases your projects, skills, and personality. It's optimized for performance, built with a modular React architecture, and packed with reusable components.
+**my-portfolio** is a sleek, custom-crafted developer portfolio built with React and Vite, showcasing your skills, projects, and personality in a fast, responsive single-page application. It’s optimized for performance and designed with modularity, scalability, and deployability in mind.
 
-Why use it?
-- 🚀 **Consistent builds** with lock files
-- 💡 **Interactive UI** including a WeatherWidget and animated Navbar
-- 🎨 **Cohesive design** 
+### Why use it?
+- 🚀 **Lightning-fast builds** with Vite and dependency lock files for consistent environments
+- 💡 **Interactive UI** featuring a live WeatherWidget, animated components (Framer Motion), and a theme toggle (Light/Dark Mode)
+- 🎨 **Cohesive design** with reusable, well-structured React components and modern UI/UX best practices
+- 🌐 **Deployed with Vercel**, offering seamless CI/CD and instant updates
+- 📬 **[Formspree integration](https://help.formspree.io/hc/en-us/articles/360055613373-The-Formspree-React-library)** for a fully functional contact form without the need for backend setup
+- 📦 **Clean codebase** with ESLint and Prettier enforcing consistent code style
+
+Whether you're showcasing client work, personal projects, or just making a statement—this portfolio is built to impress and scale.
 
 ---
 
 ## 🟠 Features
 
-|      | Component        | Details                                                                                                                                 |
-| :--- | :--------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+|      | Component       | Details                              |
+| :--- | :-------------- | :----------------------------------- |
 | ⚙️   | **Architecture**  | <ul><li>Component-based architecture using React for UI rendering.</li><li>Single Page Application (SPA) structure powered by Vite.</li></ul> |
 | 🔩  | **Code Quality**   | <ul><li>Consistent code formatting enforced by ESLint and Prettier.</li><li>React Hooks used for state and lifecycle management.</li><li>Separation of logic into clean, readable components.</li></ul> |
 | 📄  | **Documentation**  | <ul><li>Minimal inline code comments for functions and logic.</li><li>README.md provides an overview, but lacks deeper API/component documentation.</li></ul> |
 | 🔌  | **Integrations**   | <ul><li>Formspree integration for contact form handling.</li><li>Vercel used for fast deployment with CI/CD support.</li><li>OpenWeatherMap API for weather widget in navbar.</li><li>Light/Dark mode toggle functionality.</li></ul> |
 | 🧩  | **Modularity**     | <ul><li>Well-organized component structure with reusable layout and UI components.</li><li>Separation of styling and logic for maintainability.</li></ul> |
-| 🧪  | **Testing**        | <ul><li>No formal test suite or test runner (e.g., Jest, React Testing Library) currently implemented.</li><li>Manual testing observed during development.</li></ul> |
 | ⚡️   | **Performance**    | <ul><li>Optimized with Vite’s fast bundling and development server.</li><li>Lazy loading used for avatar image.</li><li>Minimal bundle size due to selective dependency usage.</li></ul> |
 | 🛡️  | **Security**       | <ul><li>API keys hidden using environment variables (Vite `.env` file).</li><li>Follows React security best practices (no dangerouslySetInnerHTML, proper form handling).</li></ul> |
 | 📦  | **Dependencies**   | <ul><li>Key packages: React, Vite, ESLint, Prettier, Framer Motion, Formspree, OpenWeatherMap API.</li><li>Dependencies managed via `package.json` and `package-lock.json`.</li></ul> |
