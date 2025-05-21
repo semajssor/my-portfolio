@@ -9,23 +9,25 @@
 <br clear="left" />
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/license/semajssor/my-portfolio?style=flat-square&logo=opensourceinitiative&logoColor=white&color=E92063" alt="license">
 <img src="https://img.shields.io/github/last-commit/semajssor/my-portfolio?style=flat-square&logo=git&logoColor=white&color=E92063" alt="last-commit">
 <img src="https://img.shields.io/github/languages/top/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-top-language">
 <img src="https://img.shields.io/github/languages/count/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-language-count">
 
+<br clear="left" />
 <em>Built with the tools and technologies:</em>
 
-<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat-square&logo=JSON&logoColor=white" alt="JSON">
+<!-- Languages & Tools Used -->
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=react&logoColor=black" alt="React">
+<img src="https://img.shields.io/badge/Vite-646CFF.svg?style=flat-square&logo=vite&logoColor=white" alt="Vite">
+<img src="https://img.shields.io/badge/CSS-2965f1.svg?style=flat-square&logo=css3&logoColor=white" alt="CSS">
+<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat-square&logo=eslint&logoColor=white" alt="ESLint">
+<img src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat-square&logo=prettier&logoColor=black" alt="Prettier">
 <img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat-square&logo=npm&logoColor=white" alt="npm">
-<img src="https://img.shields.io/badge/Autoprefixer-DD3735.svg?style=flat-square&logo=Autoprefixer&logoColor=white" alt="Autoprefixer">
-<img src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat-square&logo=PostCSS&logoColor=white" alt="PostCSS">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black" alt="JavaScript">
-<br>
-<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black" alt="React">
-<img src="https://img.shields.io/badge/Vite-646CFF.svg?style=flat-square&logo=Vite&logoColor=white" alt="Vite">
-<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat-square&logo=ESLint&logoColor=white" alt="ESLint">
-<img src="https://img.shields.io/badge/CSS-663399.svg?style=flat-square&logo=CSS&logoColor=white" alt="CSS">
+<img src="https://img.shields.io/badge/Vercel-000000.svg?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
+<img src="https://img.shields.io/badge/Formspree-EF233C.svg?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMSAzMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMuMC9zdmc... (shortened for display)" alt="Formspree">
+
 
 <br clear="left"/>
 
@@ -61,93 +63,93 @@ Why use it?
 
 ## 🟠 Features
 
-|      | Component       | Details                              |
-| :--- | :-------------- | :----------------------------------- |
-| ⚙️  | **Architecture**  | <ul><li>Component-based architecture using React for UI rendering.</li><li>Follows a single-page application (SPA) design pattern.</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>Consistent code formatting enforced by ESLint.</li><li>Usage of React hooks for state management improving code readability.</li></ul> |
-| 📄 | **Documentation** | <ul><li>Minimal inline code comments for function explanations.</li><li>Lacks comprehensive external documentation.</li></ul> |
-| 🔌 | **Integrations**  | <ul><li>Integrated with Formspree for form handling.</li><li>Utilizes Vite for fast development and React hot module replacement.</li><li>Use of a Weather API.</li><li>Light/Dark Mode Toggle button</li></ul> |
-| 🧩 | **Modularity**    | <ul><li>Well-structured component hierarchy promoting reusability.</li><li>Separation of concerns between UI components and logic.</li></ul> |
-| 🧪 | **Testing**       | <ul><li>Includes basic unit tests for critical components.</li><li>Missing comprehensive test coverage.</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>Optimized with lazy loading for images and code splitting for faster initial load times.</li></ul> |
-| 🛡️ | **Security**      | <ul><li>Follows best practices for React security.</li><li>No known security vulnerabilities reported.</li></ul> |
-| 📦 | **Dependencies**  | <ul><li>Relies on various npm packages like React and Framer Motion</li><li>Package versions managed through package-lock.json and package.json.</li></ul> |
+|      | Component        | Details                                                                                                                                 |
+| :--- | :--------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| ⚙️   | **Architecture**  | <ul><li>Component-based architecture using React for UI rendering.</li><li>Single Page Application (SPA) structure powered by Vite.</li></ul> |
+| 🔩  | **Code Quality**   | <ul><li>Consistent code formatting enforced by ESLint and Prettier.</li><li>React Hooks used for state and lifecycle management.</li><li>Separation of logic into clean, readable components.</li></ul> |
+| 📄  | **Documentation**  | <ul><li>Minimal inline code comments for functions and logic.</li><li>README.md provides an overview, but lacks deeper API/component documentation.</li></ul> |
+| 🔌  | **Integrations**   | <ul><li>Formspree integration for contact form handling.</li><li>Vercel used for fast deployment with CI/CD support.</li><li>OpenWeatherMap API for weather widget in navbar.</li><li>Light/Dark mode toggle functionality.</li></ul> |
+| 🧩  | **Modularity**     | <ul><li>Well-organized component structure with reusable layout and UI components.</li><li>Separation of styling and logic for maintainability.</li></ul> |
+| 🧪  | **Testing**        | <ul><li>No formal test suite or test runner (e.g., Jest, React Testing Library) currently implemented.</li><li>Manual testing observed during development.</li></ul> |
+| ⚡️   | **Performance**    | <ul><li>Optimized with Vite’s fast bundling and development server.</li><li>Lazy loading used for avatar image.</li><li>Minimal bundle size due to selective dependency usage.</li></ul> |
+| 🛡️  | **Security**       | <ul><li>API keys hidden using environment variables (Vite `.env` file).</li><li>Follows React security best practices (no dangerouslySetInnerHTML, proper form handling).</li></ul> |
+| 📦  | **Dependencies**   | <ul><li>Key packages: React, Vite, ESLint, Prettier, Framer Motion, Formspree, OpenWeatherMap API.</li><li>Dependencies managed via `package.json` and `package-lock.json`.</li></ul> |
 
 ---
 
 ## 🟡 Project Structure
 
 ```sh
-		my-portfolio/
-		├─ public/
-		│  ├─ assets/
-		│  │  ├─ icons/
-		│  │  │  ├─ clarifai_icon_dark.svg
-		│  │  │  └─ clarifai_icon_light.svg
-		│  │  ├─ projects-images/
-		│  │  │  ├─ password_generator.png
-		│  │  │  ├─ R-P-S-L-S.png
-		│  │  │  ├─ robofriends.png
-		│  │  │  └─ smart_brain.png
-		│  │  ├─ projects-videos/
-		│  │  │  ├─ password_generator.gif
-		│  │  │  ├─ R-P-S-L-S.gif
-		│  │  │  ├─ robofriends.gif
-		│  │  │  └─ smart_brain.gif
-		│  │  ├─ avatar-circle.png
-		│  │  ├─ brand_image_black.svg
-		│  │  ├─ brand_image_white.svg
-		│  │  └─ brandImage.svg
-		│  └─ vite.svg
-		├─ src/
-		│  ├─ animations/
-		│  │  └─ fadeInUp.js
-		│  ├─ assets/
-		│  │  ├─ avatar.png
-		│  │  └─ logo.svg
-		│  ├─ components/
-		│  │  ├─ About/
-		│  │  │  ├─ About.css
-		│  │  │  └─ About.jsx
-		│  │  ├─ Contact Form/
-		│  │  │  ├─ ContactForm.css
-		│  │  │  └─ ContactForm.jsx
-		│  │  ├─ Footer/
-		│  │  │  ├─ Footer.css
-		│  │  │  └─ Footer.jsx
-		│  │  ├─ icons/
-		│  │  │  └─ ClarifaiIcon.jsx
-		│  │  ├─ Navbar/
-		│  │  │  ├─ Navbar.css
-		│  │  │  └─ Navbar.jsx
-		│  │  ├─ Projects/
-		│  │  │  ├─ Projects.css
-		│  │  │  └─ Projects.jsx
-		│  │  ├─ Theme/
-		│  │  │  ├─ FixedThemeToggle.css
-		│  │  │  ├─ FixedThemeToggle.jsx
-		│  │  │  ├─ ThemeToggle.css
-		│  │  │  └─ ThemeToggle.jsx
-		│  │  ├─ Weather Widget/
-		│  │  │  ├─ WeatherWidget.css
-		│  │  │  └─ WeatherWidget.jsx
-		│  │  ├─ Navbar.css
-		│  │  ├─ Navbar.jsx
-		│  │  ├─ WeatherWidget.css
-		│  │  └─ WeatherWidget.jsx
-		│  ├─ hooks/
-		│  │  └─ useDarkMode.js
-		│  ├─ App.jsx
-		│  ├─ index.css
-		│  └─ main.jsx
-		├─ .env
-		├─ .gitignore
-		├─ eslint.config.js
-		├─ index.html
-		├─ package-lock.json
-		├─ package.json
-		├─ README.md
-		└─ vite.config.js
+my-portfolio/
+├─ public/
+│  ├─ assets/
+│  │  ├─ icons/
+│  │  │  ├─ clarifai_icon_dark.svg
+│  │  │  └─ clarifai_icon_light.svg
+│  │  ├─ projects-images/
+│  │  │  ├─ password_generator.png
+│  │  │  ├─ R-P-S-L-S.png
+│  │  │  ├─ robofriends.png
+│  │  │  └─ smart_brain.png
+│  │  ├─ projects-videos/
+│  │  │  ├─ password_generator.gif
+│  │  │  ├─ R-P-S-L-S.gif
+│  │  │  ├─ robofriends.gif
+│  │  │  └─ smart_brain.gif
+│  │  ├─ avatar-circle.png
+│  │  ├─ brand_image_black.svg
+│  │  ├─ brand_image_white.svg
+│  │  └─ brandImage.svg
+│  └─ vite.svg
+├─ src/
+│  ├─ animations/
+│  │  └─ fadeInUp.js
+│  ├─ assets/
+│  │  ├─ avatar.png
+│  │  └─ logo.svg
+│  ├─ components/
+│  │  ├─ About/
+│  │  │  ├─ About.css
+│  │  │  └─ About.jsx
+│  │  ├─ Contact Form/
+│  │  │  ├─ ContactForm.css
+│  │  │  └─ ContactForm.jsx
+│  │  ├─ Footer/
+│  │  │  ├─ Footer.css
+│  │  │  └─ Footer.jsx
+│  │  ├─ icons/
+│  │  │  └─ ClarifaiIcon.jsx
+│  │  ├─ Navbar/
+│  │  │  ├─ Navbar.css
+│  │  │  └─ Navbar.jsx
+│  │  ├─ Projects/
+│  │  │  ├─ Projects.css
+│  │  │  └─ Projects.jsx
+│  │  ├─ Theme/
+│  │  │  ├─ FixedThemeToggle.css
+│  │  │  ├─ FixedThemeToggle.jsx
+│  │  │  ├─ ThemeToggle.css
+│  │  │  └─ ThemeToggle.jsx
+│  │  ├─ Weather Widget/
+│  │  │  ├─ WeatherWidget.css
+│  │  │  └─ WeatherWidget.jsx
+│  │  ├─ Navbar.css
+│  │  ├─ Navbar.jsx
+│  │  ├─ WeatherWidget.css
+│  │  └─ WeatherWidget.jsx
+│  ├─ hooks/
+│  │  └─ useDarkMode.js
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ .env
+├─ .gitignore
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ README.md
+└─ vite.config.js
 
 ```
 
@@ -168,29 +170,21 @@ Build my-portfolio from the source and intsall dependencies:
 
 1. **Clone the repository:**
 
-    ```sh
-    ❯ git clone https://github.com/semajssor/my-portfolio
-    ```
+```sh
+❯ git clone https://github.com/semajssor/my-portfolio
+```
 
 2. **Navigate to the project directory:**
 
-    ```sh
-    ❯ cd my-portfolio
-    ```
+```sh
+❯ cd my-portfolio
+```
 
 3. **Install the dependencies:**
 
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![npm][npm-shield]][npm-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [npm-shield]: https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white -->
-	<!-- [npm-link]: https://www.npmjs.com/ -->
-
-	**Using [npm](https://www.npmjs.com/):**
-
-	```sh
-	❯ npm install
-	```
+```sh
+❯ npm install
+```
 
 ### ⚪ Usage
 
