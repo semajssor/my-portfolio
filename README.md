@@ -11,10 +11,10 @@
 <img src="https://img.shields.io/github/last-commit/semajssor/my-portfolio?style=flat-square&logo=git&logoColor=white&color=E92063" alt="last-commit">
 <img src="https://img.shields.io/github/languages/top/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-top-language">
 <img src="https://img.shields.io/github/languages/count/semajssor/my-portfolio?style=flat-square&color=E92063" alt="repo-language-count">
-
+<br clear="left" />
+<br clear="left" />
 <br clear="left" />
 <em>Built with the tools and technologies:</em>
-<br clear="left" />
 <br clear="left" />
 <br clear="left" />
 <!-- Languages & Tools Used -->
