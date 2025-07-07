@@ -2,7 +2,7 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../animations/fadeInUp";
 import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJsSquare } from "react-icons/fa";
-import { SiVite, SiMongodb, SiPostgresql, SiExpress } from "react-icons/si";
+import { SiVite, SiMongodb, SiPostgresql, SiExpress, SiSass, SiFirebase } from "react-icons/si";
 import ClarifaiIcon from "../icons/ClarifaiIcon";
 
 const techIcons = {
@@ -16,6 +16,8 @@ const techIcons = {
 	html: <FaHtml5 title="html" />,
 	javascript: <FaJsSquare title="JavaScript" />,
 	clarifai: <ClarifaiIcon title="Clarifai" />,
+	scss: <SiSass title="SCSS" />,
+	firebase: <SiFirebase title="Firebase" />,
 };
 
 //To change recordings (.mov) to .gif, I firstly used the HandBrake app to convert in .mp4 and then used ezgif.com to convert it to .gif
