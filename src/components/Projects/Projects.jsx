@@ -18,6 +18,8 @@ const techIcons = {
 	clarifai: <ClarifaiIcon title="Clarifai" />,
 };
 
+//To change recordings (.mov) to .gif, I firstly used the HandBrake app to convert in .mp4 and then used ezgif.com to convert it to .gif
+
 const projects = [
 	{
 		title: "Face Recognition App",
@@ -27,6 +29,15 @@ const projects = [
 		gif: "/assets/projects-videos/smart_brain.gif",
 		tech: ["react", "vite", "node", "postgresql", "express", "css", "clarifai"],
 		link: "https://github.com/semajssor/face_recognition_brain",
+	},
+	{
+		title: "Thorn & Slate",
+		description:
+			"Thorn & Slate is a modern, responsive e-commerce website project built with React. It showcases a clean, minimal product catalog, smooth animations, and an intuitive shopping experience — perfect as a portfolio piece for demonstrating front-end skills and design sense.",
+		image: "/assets/projects-images/thorn+slate.png",
+		gif: "/assets/projects-videos/thorn+slate.gif",
+		tech: ["React", "Vite", "Firebase", "Formspree", "CSS", "Framer Motion"],
+		link: "https://github.com/semajssor/thorn-slate",
 	},
 	{
 		title: "Rock Paper Scissors Lizard Spock",
