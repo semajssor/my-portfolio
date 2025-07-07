@@ -27,7 +27,7 @@ const projects = [
 			"Face Recognition Brain is a full-stack web application that leverages Clarifai’s AI API to detect faces in images. Built with a Vite-powered React frontend and a Node.js backend, it allows users to upload image URLs and receive real-time face detection results.",
 		image: "/assets/projects-images/smart_brain.png",
 		gif: "/assets/projects-videos/smart_brain.gif",
-		tech: ["React", "Vite", "node", "PostgreSQL", "Express", "CSS", "clarifai"],
+		tech: ["react", "vite", "node", "postgresql", "express", "css", "clarifai"],
 		link: "https://github.com/semajssor/face_recognition_brain",
 	},
 	{
@@ -36,7 +36,7 @@ const projects = [
 			"Thorn & Slate is a modern, responsive e-commerce website project built with React. It showcases a clean, minimal product catalog, smooth animations, and an intuitive shopping experience — perfect as a portfolio piece for demonstrating front-end skills and design sense.",
 		image: "/assets/projects-images/thorn+slate.png",
 		gif: "/assets/projects-videos/thorn+slate.gif",
-		tech: ["React", "Vite", "Firebase", "SCSS"],
+		tech: ["react", "vite", "firebase", "scss"],
 		link: "https://github.com/semajssor/thorn-slate",
 	},
 	{
@@ -45,7 +45,7 @@ const projects = [
 			"A fun and responsive Rock-Paper-Scissors-Lizard-Spock game built with modern JavaScript. Features dynamic gameplay logic, interactive UI, and a clean, mobile-friendly design.",
 		image: "/assets/projects-images/R-P-S-L-S.png",
 		gif: "/assets/projects-videos/R-P-S-L-S.gif",
-		tech: ["HTML", "CSS", "Javascript"],
+		tech: ["html", "css", "javascript"],
 		link: "https://github.com/semajssor/rock-paper-scissors-lizard-spock",
 	},
 	{
@@ -54,7 +54,7 @@ const projects = [
 			"A modernized version of the classic “Robot Friends” app, now built with React and powered by Vite for faster development and improved performance.",
 		image: "/assets/projects-images/robofriends.png",
 		gif: "/assets/projects-videos/robofriends.gif",
-		tech: ["React", "Vite", "Javascript", "CSS", "HTML"],
+		tech: ["react", "vite", "javascript", "css", "html"],
 		link: "https://github.com/semajssor/robofriends_vite",
 	},
 	{
@@ -63,7 +63,7 @@ const projects = [
 			"A simple and effective password generator that creates strong, random passwords based on user-defined criteria. Built with JavaScript, HTML, and CSS.",
 		image: "/assets/projects-images/password_generator.png",
 		gif: "/assets/projects-videos/password_generator.gif",
-		tech: ["HTML", "CSS", "Javascript"],
+		tech: ["html", "css", "javascript"],
 		link: "https://github.com/semajssor/password_generator",
 	},
 	// Add more projects here...
