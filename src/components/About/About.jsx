@@ -1,5 +1,7 @@
 import "./About.css";
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+/* eslint-enable no-unused-vars */
 import { fadeInUp } from "../../animations/fadeInUp";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

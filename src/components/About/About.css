@@ -29,22 +29,33 @@
 
 .about-buttons {
    margin-top: 2rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 0.5rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, auto);   
+   gap: 1rem; 
+   justify-items: center; 
+   width: 100%;
+   max-width: 450px; 
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .about-buttons .btn {
+   width: 100%; 
    padding: 0.6rem 1.2rem;
-   border: none;
-   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
    border-radius: 8px;
    text-decoration: none;
-   transition: background 0.3s ease;
-   min-width: 200px;
+   transition: background 0.3s ease, transform 0.2s ease;
    text-align: center;
+   /* min-width: 200px; */
+}
+
+.about-buttons .btn:hover {
+   transform: translateY(-2px);
 }
 
 .about-buttons .btn.primary {
@@ -55,12 +66,7 @@
 /* Mobile-first responsive tweak */
 @media (max-width: 480px) {
    .about-buttons {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .about-buttons .btn {
-      width: 100%;
+      grid-template-columns: 1fr;
       max-width: 300px;
    }
 }
