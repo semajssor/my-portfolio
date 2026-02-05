@@ -66,6 +66,28 @@
 /* Mobile-first responsive tweak */
 @media (max-width: 480px) {
    .about-buttons {
+      /* On passe à une seule colonne pour les gros boutons */
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto auto auto; /* 3 rangées */
       max-width: 300px;
+      gap: 0.8rem;
+   }
+
+   /* On force les icônes sociaux à se partager la 3e rangée */
+   /* On cible le 3e et 4e lien (GitHub et LinkedIn) */
+   .about-buttons a:nth-child(3),
+   .about-buttons a:nth-child(4) {
+      grid-row: 3; /* Force la 3e ligne */
+   }
+
+   /* Pour que les deux icônes soient côte à côte sur la même ligne */
+   .about-buttons {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   /* On fait en sorte que les deux premiers boutons prennent toute la largeur (2 colonnes) */
+   .about-buttons a:nth-child(1),
+   .about-buttons a:nth-child(2) {
+      grid-column: span 2;
    }
 }
