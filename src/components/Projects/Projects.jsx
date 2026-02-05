@@ -15,7 +15,7 @@ const techIcons = {
 	postgresql: <SiPostgresql title="PostgreSQL" />,
 	express: <SiExpress title="Express" />,
 	css: <FaCss3Alt title="CSS3" />,
-	html: <FaHtml5 title="html" />,
+	html: <FaHtml5 title="HTML" />,
 	javascript: <FaJsSquare title="JavaScript" />,
 	clarifai: <ClarifaiIcon title="Clarifai" />,
 	scss: <SiSass title="SCSS" />,
@@ -110,7 +110,11 @@ function Projects() {
 								</span>
 							))}
 						</div>
-						<a href={project.link} target="_blank" rel="noopener noreferrer" className="btn">
+						<a
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="btn">
 							View Project
 						</a>
 					</motion.div>
