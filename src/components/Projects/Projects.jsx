@@ -1,5 +1,7 @@
 import "./Projects.css";
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+/* eslint-enable no-unused-vars */
 import { fadeInUp } from "../../animations/fadeInUp";
 import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJsSquare } from "react-icons/fa";
 import { SiVite, SiMongodb, SiPostgresql, SiExpress, SiSass, SiFirebase } from "react-icons/si";
@@ -99,7 +101,7 @@ function Projects() {
 						<p>{project.description}</p>
 						<div className="tech-icons">
 							{project.tech?.map((tech, index) => (
-								<span key={index} className="tech-icon">
+								<span key={index} className="tech-icon" title={tech.charAt(0).toUpperCase() + tech.slice(1)}>
 									{techIcons[tech]}
 								</span>
 							))}

@@ -35,7 +35,7 @@ function About() {
 
 				<motion.div className="about-buttons" {...fadeInUp(0.5)}>
 					<a
-						href="https://jmp.sh/Z79Nt7EY"
+						href="https://jmp.sh/9H546wLl"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="btn">
