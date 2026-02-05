@@ -101,7 +101,11 @@ function Projects() {
 						<p>{project.description}</p>
 						<div className="tech-icons">
 							{project.tech?.map((tech, index) => (
-								<span key={index} className="tech-icon" title={tech.charAt(0).toUpperCase() + tech.slice(1)}>
+								<span
+									key={index}
+									className="tech-icon"
+									title={tech.toUpperCase()}
+									style={{ cursor: "help" }}>
 									{techIcons[tech]}
 								</span>
 							))}
