@@ -1,6 +1,7 @@
 import "./About.css";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../animations/fadeInUp";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
 	return (
@@ -40,6 +41,22 @@ function About() {
 					</a>
 					<a href="mailto:jamesrossmail@duck.com" className="btn">
 						💼 Hire Me
+					</a>
+					<a
+						href="https://github.com/semajssor"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="GitHub"
+						className="btn">
+						<FaGithub />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/james-ross-cad"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="LinkedIn"
+						className="btn">
+						<FaLinkedin />
 					</a>
 				</motion.div>
 			</motion.div>
